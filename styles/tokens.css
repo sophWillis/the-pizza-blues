@@ -1,0 +1,35 @@
+:root {
+  /* COLOURS */
+  --color-main: #1a2535;
+  --color-secondary: #fffde5;
+
+  /* RGBA VALUES */
+  --rgba-black: 0, 0, 0;
+
+  /* BORDERS */
+  --outline-main: 1px solid #1a2535;
+  --border-secondary: 3px solid #fffde5;
+
+  /* HEADINGS */
+  --heading-font-size-h1: 2.5rem;
+  --heading-font-size-h2: 2rem;
+  --heading-font-size-h3: 1.8rem;
+
+  /* BODY */
+  --body-font-size-small: 1.4rem;
+  --body-font-size-standard: 1.6rem;
+
+  /* WEIGHT */
+  --font-weight-regular: 300;
+  --font-weight-bold: 600;
+
+  /* SPACING */
+  --spacing-4: 0.4rem;
+  --spacing-8: 0.8rem;
+  --spacing-16: 1.6rem;
+  --spacing-24: 2.4rem;
+  --spacing-32: 3.2rem;
+  --spacing-40: 4rem;
+  --spacing-56: 5.6rem;
+  --spacing-120: 12rem;
+}
