@@ -4,6 +4,7 @@ import { createClient } from "contentful";
 import { parseEntryToWidget } from "../lib/parsers/widget.parser";
 import { Header } from "../components/header/header.component";
 import { SubNavigation } from "../components/sub-navigation/sub-navigation.component";
+import { HeroBanner } from "../components/hero-banner/hero-banner.component";
 import { Footer } from "../components/footer/footer.component";
 
 export const getStaticProps = async () => {
@@ -28,6 +29,10 @@ export const getStaticProps = async () => {
     ? parseEntryToWidget(page.fields.subNavigation)
     : null;
 
+  const heroBanner = page.fields.heroBanner
+    ? parseEntryToWidget(page.fields.heroBanner)
+    : null;
+
   const footer = page.fields.footer
     ? parseEntryToWidget(page.fields.footer)
     : null;
@@ -36,12 +41,13 @@ export const getStaticProps = async () => {
     props: {
       header,
       subNavigation,
+      heroBanner,
       footer,
     },
   };
 };
 
-export const Home = ({ header, subNavigation, footer }) => {
+export const Home = ({ header, subNavigation, heroBanner, footer }) => {
   return (
     <>
       <Head>
@@ -49,6 +55,7 @@ export const Home = ({ header, subNavigation, footer }) => {
       </Head>
       <Header {...header} />
       <SubNavigation {...subNavigation} />
+      <HeroBanner {...heroBanner} />
       <Footer {...footer} />
     </>
   );
