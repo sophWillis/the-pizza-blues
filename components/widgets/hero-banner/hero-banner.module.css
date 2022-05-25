@@ -56,14 +56,14 @@
 
 @media (min-width: 768px) {
   .hero-banner {
-    height: 58rem;
+    height: 57rem;
     background-position: center;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-banner {
-    background-attachment: "fixed";
+    height: var(--banner-height);
   }
   .hero-logo {
     width: 45rem;

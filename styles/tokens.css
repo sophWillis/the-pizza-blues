@@ -27,6 +27,9 @@
   --font-weight-regular: 300;
   --font-weight-bold: 600;
 
+  /* HEIGHT */
+  --banner-height: calc(100vh - 152px);
+
   /* SPACING */
   --spacing-4: 0.4rem;
   --spacing-8: 0.8rem;
