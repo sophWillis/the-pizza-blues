@@ -1,8 +1,8 @@
 import styles from "./frame.module.css";
 
-export const Frame = ({ id, children }) => {
+export const Frame = ({ sectionId, children }) => {
   return (
-    <section id={id} className={styles.frame}>
+    <section id={sectionId} className={styles.frame}>
       {children}
     </section>
   );

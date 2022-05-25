@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Libres Baskerville", serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 html {
@@ -21,7 +21,7 @@ a {
 
 ul {
   list-style: none;
-  padding-inline-start: unset;
+  padding-left: unset;
   margin-block-start: unset;
   margin-block-end: unset;
 }
@@ -30,7 +30,7 @@ ul {
   background-color: #283242;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .active {
     background-color: unset;
     border-bottom: var(--border-secondary);

@@ -11,7 +11,7 @@ export const SubNavigation = ({ menuIntro, menuItems }) => {
   const [shouldDisplayNavigation, setShouldDisplayNavigation] = useState(false);
 
   useEffect(() => {
-    setOffset(navigationBar.current.offsetHeight);
+    setOffset(70 + navigationBar.current.offsetHeight);
   }, [navigationBar]);
 
   const toggleNavigation = useCallback(() => {
@@ -35,7 +35,7 @@ export const SubNavigation = ({ menuIntro, menuItems }) => {
                 duration={500}
                 spy={true}
                 activeClass="active"
-                offset={offset}
+                offset={-Math.abs(offset)}
                 className={styles["menu-link"]}
               >
                 {menuItem.text}

@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
 :root {
   /* COLOURS */
   --color-main: #1a2535;
   --color-secondary: #fffde5;
   --color-white: #ffffff;
+  --color-grey: #444444;
 
   /* RGBA VALUES */
   --rgba-black: 0, 0, 0;
@@ -33,4 +36,5 @@
   --spacing-40: 4rem;
   --spacing-56: 5.6rem;
   --spacing-120: 12rem;
+  --spacing-800: 80rem;
 }

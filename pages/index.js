@@ -6,10 +6,10 @@ import {
   parseEntryCollectionToWidgetMap,
   renderWidgets,
 } from "../lib/parsers/widget.parser";
-import { Header } from "../components/header/header.component";
-import { SubNavigation } from "../components/sub-navigation/sub-navigation.component";
-import { HeroBanner } from "../components/hero-banner/hero-banner.component";
-import { Footer } from "../components/footer/footer.component";
+import { Header } from "../components/widgets/header/header.component";
+import { SubNavigation } from "../components/widgets/sub-navigation/sub-navigation.component";
+import { HeroBanner } from "../components/widgets/hero-banner/hero-banner.component";
+import { Footer } from "../components/widgets/footer/footer.component";
 
 export const getStaticProps = async () => {
   const client = createClient({
@@ -57,7 +57,6 @@ export const getStaticProps = async () => {
 };
 
 export const Home = ({ header, subNavigation, heroBanner, body, footer }) => {
-  console.log(body);
   return (
     <>
       <Head>

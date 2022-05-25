@@ -9,14 +9,14 @@
   font-size: var(--body-font-size-standard);
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .footer {
     justify-content: flex-start;
     padding: 0 var(--spacing-32);
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .footer {
     padding: 0 var(--spacing-56);
   }
