@@ -1,0 +1,19 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-40) var(--spacing-16);
+}
+
+@media screen and (min-width: 768px) {
+  .frame {
+    padding: var(--spacing-56) var(--spacing-32);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .frame {
+    padding: var(--spacing-120) var(--spacing-56);
+  }
+}
