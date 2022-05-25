@@ -3,6 +3,7 @@ import { createClient } from "contentful";
 
 import { parseEntryToWidget } from "../lib/parsers/widget.parser";
 import { Header } from "../components/header/header.component";
+import { SubNavigation } from "../components/sub-navigation/sub-navigation.component";
 
 export const getStaticProps = async () => {
   const client = createClient({
@@ -22,20 +23,26 @@ export const getStaticProps = async () => {
     ? parseEntryToWidget(page.fields.header)
     : null;
 
+  const subNavigation = page.fields.subNavigation
+    ? parseEntryToWidget(page.fields.subNavigation)
+    : null;
+
   return {
     props: {
       header,
+      subNavigation,
     },
   };
 };
 
-export const Home = ({ header }) => {
+export const Home = ({ header, subNavigation }) => {
   return (
     <>
       <Head>
         <title>The Pizza Blues</title>
       </Head>
       <Header {...header} />
+      <SubNavigation {...subNavigation} />
     </>
   );
 };
